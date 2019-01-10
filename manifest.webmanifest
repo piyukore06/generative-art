@@ -1,0 +1,16 @@
+{
+  "theme_color": "#57407c",
+  "background_color": "#57407c",
+  "display": "standalone",
+  "orientation": "portrait",
+  "Scope": "/",
+  "start_url": "/",
+  "icons": [
+    {
+      "src": "public/images/icons/favicon.ico",
+      "sizes": "72x72",
+      "type": "image/ico"
+    }
+  ],
+  "splash_pages": null
+}

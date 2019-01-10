@@ -1,0 +1,73 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Raleway;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@font-face {
+  font-family: Anton;
+  font-weight: 100;
+  src: url('./fonts/anton.woff2') format('woff2')
+}
+h1 {
+  font-family: Anton;
+}
+.btn{ 
+  display:inline-block; 
+  min-width:14px;
+  height:14px;
+  line-height: 16px;
+  margin:0 5px 5px 0;
+  background:#eee;
+  color:#666; /* Icon Color */
+  font-size: 10pt;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius:5px;
+  padding:10px;
+}
+
+.icon { 
+  float:left;
+  width:14px; 
+  height:14px; 
+  position:relative; 
+  display:block; 
+}
+.icon:before, 
+.icon:after { 
+  position:absolute; 
+  content:""; 
+  display:block; 
+}
+
+.icon-left:after,
+.icon-right:before { 
+  -webkit-transform:rotate(-45deg);
+  -moz-transform:rotate(-45deg);
+  -ms-transform:rotate(-45deg);
+  -o-transform:rotate(-45deg);
+  transform:rotate(-45deg);
+}
+.icon-left:before,
+.icon-right:after {
+  -webkit-transform:rotate(45deg);
+  -moz-transform:rotate(45deg);
+  -ms-transform:rotate(45deg);
+  -o-transform:rotate(45deg);
+  transform:rotate(45deg);
+}
+.icon-left:before,
+.icon-left:after,
+.icon-right:before,
+.icon-right:after {
+  width:3px;
+  height:10px;
+  box-shadow:0 0 0 16px inset;
+  top:-1px;
+  left:5px;
+}
+.icon-right:before, .icon-right:after{ left:6px; }
+.icon-left:after, .icon-right:after{ top:5px; }
