@@ -3,7 +3,7 @@
 
 ### Run app
 
-1. Clone repo ``````
+1. Clone repo `https://github.com/piyukore06/generative-art.git`
 1. ```cd generative-art```
 1. ```yarn install && yarn start  ```
 

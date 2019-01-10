@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "parcel index.html",
-    "build": "parcel build index.html --public-url ./"
+    "build": "parcel build index.html --public-url ./ && cp ./CNAME ./dist/",
+    "deploy": "yarn build && cd dist && npx surge"
   },
   "license": "ISC",
   "dependencies": {

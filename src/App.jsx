@@ -3,7 +3,7 @@ import { Octocat } from '@Components';
 import '@Styles/App.scss';
 import { Gravel, Circles, Disorder, Lines, Rainbow, BigDisorder } from '@Arts'
 import styled from 'styled-components';
-import { Router, navigate } from "@reach/router";
+import { Router, navigate, Redirect } from "@reach/router";
 
 export default class App extends PureComponent {
   NoOfArts = 5;
@@ -28,6 +28,7 @@ export default class App extends PureComponent {
         <Heading>Generative Art</Heading>
         <Container>
           <Router>
+            <Redirect from="/" to="/1" />
             <Lines path="/1" />
             <Circles path="/2"/>
             <Disorder path="/3"/>
