@@ -36,9 +36,11 @@ class Disorder extends Component {
     if (size < 40) {
       return '';
     }
-    return (<InnerBox key={size + index} rotation={40} size={size} index={index} color={getRandomColor()} >
-              {this.getBoxes(size - 2, index + 1)}     
-    </InnerBox>);
+    return (
+      <InnerBox key={'disorder' + index + size} rotation={40} size={size} index={index} color={getRandomColor()} >
+        {this.getBoxes(size - 2, index + 1)}     
+      </InnerBox>
+    );
   }
   render() {
     return (

@@ -36,7 +36,7 @@ class BigDisorder extends Component {
     if (size < 65) {
       return '';
     }
-    return (<InnerBox key={index + size} rotation={20} size={size} index={index} color={getRandomColor()} >
+    return (<InnerBox key={'bigDisorder'+size + index} rotation={20} size={size} index={index} color={getRandomColor()} >
               {this.getBoxes(size - 1, index + 1)}     
     </InnerBox>);
   }

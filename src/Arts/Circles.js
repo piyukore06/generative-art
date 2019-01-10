@@ -38,7 +38,7 @@ class Circles extends Component {
         <BoxClass ref={this.myRef}>
           {this.state.rect ? Array.from(Array(31)).map((_, rowIndex) => 
             (<Circle 
-                key={'circles' + rowIndex}
+                key={'circles' + rowIndex + this.state.rect.height}
                 x={this.getRandomNumber(this.state.rect.width)}
                 y={this.getRandomNumber(this.state.rect.height)}
                 radius={this.getRandomNumber(this.state.rect.height)}

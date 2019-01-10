@@ -38,13 +38,14 @@ export default class App extends PureComponent {
           </Router>
         </Container>
         <Navigator>
-          <a onClick={this.getPrevious} class="btn"><span class="icon icon-left"></span></a>
-          <a onClick={this.getNext} class="btn"><span class="icon icon-right"></span></a>
+          <a onClick={this.getPrevious} className="btn"><span className="icon icon-left"></span></a>
+          <a onClick={this.getNext} className="btn"><span className="icon icon-right"></span></a>
         </Navigator>
       </div>
     );
   }
 }
+
 const Heading = styled.h1`
   font-family: 'Cabin Sketch', cursive;
   font-size: 40px;
