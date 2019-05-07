@@ -23,9 +23,15 @@ export default class App extends PureComponent {
   }
   render() {
     return (
-      <div>
-        <Octocat />
-        <Heading>Generative Art</Heading>
+      <>
+      <Octocat />
+      <Heading>Generative Art</Heading>
+      <div style={{
+        position: 'absolute',
+        left: '50%',
+        top: '50%',
+        transform: 'translate(-50%, -50%)'
+      }}>
         <Container>
           <Router>
             <Redirect from="/" to="/1" />
@@ -42,6 +48,7 @@ export default class App extends PureComponent {
           <a onClick={this.getNext} className="btn"><span className="icon icon-right"></span></a>
         </Navigator>
       </div>
+      </>
     );
   }
 }
@@ -50,6 +57,7 @@ const Heading = styled.h1`
   font-family: 'Cabin Sketch', cursive;
   font-size: 40px;
   text-align: center;
+  padding: 20px;
 `;
 
 const Container = styled.div`
